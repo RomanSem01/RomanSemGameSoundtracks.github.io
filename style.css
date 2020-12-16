@@ -1,0 +1,115 @@
+body {
+  background-color: #050801;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  color: #ddd;
+  font-size: 5em;
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+}
+
+h1 span {
+  display: inline-block;
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 28%;
+}
+
+.center {
+  justify-content: center;
+}
+
+button {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  font-size: 24px;
+  margin: 10px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.b1:hover {
+  color: #EE1A09;
+  box-shadow: 0 0 5px #EE1A09,
+              0 0 25px #EE1A09,
+              0 0 50px #EE1A09,
+              0 0 200px #EE1A09;
+}
+
+.b2:hover {
+  color: #ECEC0D;
+  box-shadow: 0 0 5px #ECEC0D,
+              0 0 25px #ECEC0D,
+              0 0 50px #ECEC0D,
+              0 0 200px #ECEC0D;
+}
+
+.b3:hover {
+  color: #0B59A4;
+  box-shadow: 0 0 5px #0B59A4,
+              0 0 25px #0B59A4,
+              0 0 50px #0B59A4,
+              0 0 200px #0B59A4;
+}
+
+.b4:hover {
+  color: #E8EDF1;
+  box-shadow: 0 0 5px #E8EDF1,
+              0 0 25px #E8EDF1,
+              0 0 50px #E8EDF1,
+              0 0 200px #E8EDF1;
+}
+
+
+.b1 {
+  background-image: url('witcher.jpg');
+  color: yellow;
+}
+
+.b2 {
+  background-image: url('cyberpunk.png');
+  color: red;
+}
+
+.b3 {
+  background-image: url('valhalla.jpg');
+  color: yellow;
+  padding-top: 28px;
+}
+
+.b4 {
+  background-image: url('ezio.jpg');
+  color: red;
+  padding-top: 28px;
+}
+
+.play {
+  border: 10px solid red;
+  border-radius: 20px;
+  padding-top: 100px;
+}
